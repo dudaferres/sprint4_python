@@ -1,0 +1,110 @@
+# NutriKids - Sistema de Nutrição Infantil
+
+## 📋 Sobre o Projeto
+O NutriKids é um sistema desenvolvido para auxiliar profissionais de saúde e responsáveis no gerenciamento de recomendações nutricionais para crianças. O sistema permite calcular volumes de alimentação e armazenar recomendações de forma organizada e segura.
+
+## 🚀 Funcionalidades
+
+### Para Funcionários:
+- Login seguro com autenticação
+- Preenchimento de questionário detalhado
+- Cálculo automático de volumes de alimentação
+- Armazenamento de recomendações
+- Visualização de histórico de recomendações
+
+### Para Responsáveis:
+- Login seguro com autenticação
+- Visualização de recomendações nutricionais
+- Interface amigável e intuitiva
+
+## 💻 Tecnologias Utilizadas
+- Python 3.x
+- Tkinter (Interface Gráfica)
+- JSON (Armazenamento de Dados)
+- Pillow (PIL) - Opcional para recursos visuais
+
+## 🛠️ Instalação
+
+1. Clone o repositório:
+```bash
+git clone [URL_DO_REPOSITÓRIO]
+```
+
+2. Instale as dependências:
+```bash
+pip install Pillow
+```
+
+3. Execute o programa:
+```bash
+python gui.py
+```
+
+## 🔑 Credenciais de Acesso
+- Email: admin@admin.com
+- Senha: 1234
+
+## 📝 Estrutura do Projeto
+```
+NutriKids/
+│
+├── gui.py              # Interface gráfica principal
+├── main.py            # Lógica do sistema
+├── pacientes.json     # Banco de dados dos pacientes
+└── README.md          # Documentação
+```
+
+## 🎯 Funcionalidades Detalhadas
+
+### Cálculo de Volume
+- Baseado no peso da criança
+- Considera a idade para ajuste do fator
+- Calcula volume diário e por mamada
+- Suporta diferentes unidades (ml/L)
+
+### Questionário
+- Nome da criança
+- Idade (meses)
+- Peso (kg)
+- Sexo
+- Restrições alimentares
+- Fórmula (se aplicável)
+- Frequência de mamadas
+- Observações clínicas
+
+### Armazenamento
+- Dados salvos em formato JSON
+- Persistência entre sessões
+- Ordenação alfabética por nome
+
+## 🎨 Interface
+- Design moderno e responsivo
+- Cores suaves e agradáveis
+- Navegação intuitiva
+- Mensagens de feedback claras
+- Suporte a scroll em telas menores
+
+## 🔒 Segurança
+- Autenticação de usuários
+- Diferentes níveis de acesso
+- Validação de dados
+- Tratamento de erros
+
+## 📊 Exemplo de Cálculo
+Para uma criança com:
+- Peso: 5kg
+- Idade: 6 meses
+- Frequência: 6 mamadas/dia
+
+O sistema calcula:
+- Fator: 150ml/kg (idade > 1 mês)
+- Volume diário: 750ml
+- Volume por mamada: 125ml
+
+## 📄 Licença
+Este projeto está sob a licença [MIT](LICENSE).
+
+## 👥 Autores
+- Gabriela Queiroga - RM: 560035
+- Julia Sayuri Yokoo - RM: 560541
+- Maria Eduarda Ferrés - RM: 560418
